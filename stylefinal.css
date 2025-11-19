@@ -1,0 +1,22 @@
+body{
+background-color: blue;
+}
+
+#heading{
+	color: yellow;
+	font-size: 30px;
+	border: 4px solid black;
+	padding: 10px;
+	text-align: center;
+}
+
+#image{
+	width: 1300px;
+}
+
+#footing{
+	color: yellow;
+	font-size: 30px;
+	border: 4px solid black;
+	padding: 10px;
+	text-align: center;
