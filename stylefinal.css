@@ -1,24 +1,32 @@
 body{
-background-image: url("ocean1.jpg");
+background-image: url("cssimages/oceanback.jpg");
+height: auto;
+max-width:100%;
+background-repeat: no-repeat;
+background-size: cover;
 }
+
 
 #heading{
 	color: yellow;
 	font-size: 30px;
-	border: 4px solid black;
+	border: 4px solid grey;
 	padding: 10px;
 	text-align: center;
 }
 
-#image{
+#blueImage{
 	width: 1300px;
 	height: 500px;
+	align-self: center;
+	opacity: 0.8;
 }
+
 
 #footing{
 	color: yellow;
 	font-size: 30px;
-	border: 4px solid black;
+	border: 4px solid grey;
 	padding: 10px;
 	text-align: center;
 }
@@ -27,6 +35,7 @@ background-image: url("ocean1.jpg");
   position: relative;
   text-align: center;
   color: white;
+  
 }
 
 .centered {
@@ -35,4 +44,101 @@ background-image: url("ocean1.jpg");
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#card1{
+  background-color:DeepSkyBlue;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+#card1:hover{
+	opacity: 1;
+}
+#cardy1{
+	height: 150px;
+}
+
+
+
+#card2{
+  background-color:DeepSkyBlue;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+#card2:hover{
+	opacity: 1;
+}
+#cardy2{
+	height: 150px;
+}
+
+
+#card3{
+  background-color:DeepSkyBlue;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+#card3:hover{
+	opacity: 1;
+}
+#cardy3{
+	height: 150px;
+}
+
+
+#card4{
+  background-color:DeepSkyBlue;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+#card4:hover{
+	opacity: 1;
+}
+#cardy4{
+	height: 150px;
+}
+
+
+
+#card5{
+  background-color:DeepSkyBlue;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+#card5:hover{
+	opacity: 1;
+}
+#cardy5{
+	height: 150px;
+}
+
+
+
+#card6{
+  background-color:DeepSkyBlue;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+#card6:hover{
+	opacity: 1;
+}
+#cardy{
+	height: 50px;
 }
