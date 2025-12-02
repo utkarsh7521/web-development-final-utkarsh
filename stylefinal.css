@@ -1,49 +1,55 @@
+/*CSS sheet by:Utkarsh Mishra (25156756)*/
 body{
-background-image: url("cssimages/oceanback.jpg");
-height: auto;
-max-width:100%;
-background-repeat: no-repeat;
-background-size: cover;
+  background-image: url("cssimages/waterback.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+ 
+
+}
+.hero{
 }
 
 
-#heading{
-	color: yellow;
+
+.header, .footer{
+	color: white;
+	background-color:teal;
 	font-size: 30px;
-	border: 4px solid grey;
-	padding: 10px;
+	padding: 20px;
+	margin-top: 20px;
+	border-radius: 60px;
 	text-align: center;
-}
-
-#blueImage{
-	width: 1300px;
-	height: 500px;
-	align-self: center;
-	opacity: 0.8;
+	width: 100%;
 }
 
 
-#footing{
-	color: yellow;
-	font-size: 30px;
-	border: 4px solid grey;
-	padding: 10px;
-	text-align: center;
-}
-	
+
 .container {
-  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
-  color: white;
+  
+
+  
   
 }
 
 .centered {
-  position: absolute;
-  font-size: 30px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 20px;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 8px;
+  color: white;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: teal;
+  
+  
 }
 
 
@@ -62,6 +68,7 @@ background-size: cover;
   background-size: cover;
   background-position: center;
   opacity: 0.7;
+  
 }
 #card1:hover{
 	opacity: 1;
