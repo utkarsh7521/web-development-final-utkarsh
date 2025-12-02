@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!--feedback form BY:Utkarsh Mishra (25156756)-->
+
+		 <title>feedback</title>
+		 <link rel="stylesheet" href="css/feedback.css">
+		 
+		 
+		 <meta name="viewpoint" content="width=device-width, 
+		 initial-scale=1.0" />
+  </head>
+	 
+  <body>
+	<div id="ourForm">
+	  <form onsubmit="return checkinglength()">
+	  		 <i><u><h2>Feedback form</h2></u></i>
+
+		 <label> Name: </label><br>
+		  <input id="theName" type="text" placeholder=" enter your name"  />
+		  <br><br> 
+		  
+		  
+		  <label> Password: </label>
+		  <input id="thePassword" type="Password" placeholder=" enter your password"/>
+		  
+		  <br><br>
+		  
+		 <p><u> <legend> select gender</u></legend> </p>
+		  <label>Male</label>
+		  <input type="radio" name="gender" /> <br><br>
+		  
+		   <label>Female</label>
+		  <input type="radio" name="gender" /> <br><br>
+		  
+		   <label>Other</label>
+		  <input type="radio" name="gender" /> <br><br>
+		  
+			
+		  
+		  <p><u> how was your overall experience</u></p>
+		  <label for="b1">great</label>
+		  <input id="b1" type="radio" name="bank" /> <br><br>
+		  
+		   <label for="b2">decent</label>
+		  <input id="b2" type="radio" name="bank" /> <br><br>
+		  
+		   <label for="b3">poor</label>
+		  <input id="b3" type="radio" name="bank" /> <br><br><br>
+		  
+		  
+		  <label> Other details </label><br>
+		  <textarea rows="10" col="5"></textarea>
+		 
+		 <<br><Br><input type="submit"/>
+	 </form>
+	</div>
+	<img id="mouse" src="" alt="themouse">
+
+	
+
+	
+	<script>
+			var stheName, sthePassword;
+			
+			function checkinglength(){
+				stheName = document.getElementById("theName").value;
+				sthePassword = document.getElementById("thePassword").value;
+				
+				if(stheName.length > 3 && sthePassword.length >4 ){
+					yipee();
+				}else{
+					alert("please enter a name of atleast 3 characters and password of atleast 4");
+				}
+			}
+			
+			function yipee(){
+				document.getElementById("ourForm").style.display = "none";
+				
+				document.write("thanks for taking the time to fill our form "+ stheName);
+                var img = document.createElement("img");
+				img.style.display= "block"
+				img.src = "images/mouse.jpg";  
+				img.alt = "the mouse himself";
+                document.body.appendChild(img);
+
+
+			}
+						
+			
+	
+	</script> 
+	
+
+
+
+
+
+
+
+
+ </body>
+</html>
