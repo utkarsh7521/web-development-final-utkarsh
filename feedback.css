@@ -1,8 +1,14 @@
+body{
+	background-color:LightCyan;
+}
+
 #ourForm{
+	 background-color:LightBlue;
 	  width: 15%;
       margin: auto;
 	  border-style: double;
 	  padding:30px;
+	  box-shadow: 5px 5px;
 	
 }
 

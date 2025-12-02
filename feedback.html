@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <meta name="author" content="Utkarsh Mishra">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--feedback form BY:Utkarsh Mishra (25156756)-->
 
 		 <title>feedback</title>
 		 <link rel="stylesheet" href="css/feedback.css">
+		 <!--stylesheet link-->
 		 
 		 
-		 <meta name="viewpoint" content="width=device-width, 
-		 initial-scale=1.0" />
+		 <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+		 <!--for responsive web design-->
   </head>
 	 
   <body>
 	<div id="ourForm">
 	  <form onsubmit="return checkinglength()">
+	  <!--form used to put text boex and radio buttons-->
+	  <!--function return is calling on a function from the script-->
 	  		 <i><u><h2>Feedback form</h2></u></i>
 
 		 <label> Name: </label><br>
@@ -27,43 +32,47 @@
 		  <br><br>
 		  
 		 <p><u> <legend> select gender</u></legend> </p>
-		  <label>Male</label>
-		  <input type="radio" name="gender" /> <br><br>
+		  <label for="g1">Male</label>
+		  <input id="g1" type="radio" name="gender" /> <br><br>
 		  
-		   <label>Female</label>
-		  <input type="radio" name="gender" /> <br><br>
+		   <label for="g2">Female</label>
+		  <input id="g2" type="radio" name="gender" /> <br><br>
 		  
-		   <label>Other</label>
-		  <input type="radio" name="gender" /> <br><br>
-		  
+		   <label for="g3">Other</label>
+		  <input id="g3" type="radio" name="gender" /> <br><br>
+		  <!-- "for" can be used to enable selecting even when clicking on the option itself-->
 			
 		  
 		  <p><u> how was your overall experience</u></p>
-		  <label for="b1">great</label>
-		  <input id="b1" type="radio" name="bank" /> <br><br>
+		  <label for="b4">spectacular</label>
+		  <input id="b4" type="radio" name="rate" /> <br><br>
+		  
+		  <label for="b1">good</label>
+		  <input id="b1" type="radio" name="rate" /> <br><br>
 		  
 		   <label for="b2">decent</label>
-		  <input id="b2" type="radio" name="bank" /> <br><br>
+		  <input id="b2" type="radio" name="rate" /> <br><br>
 		  
 		   <label for="b3">poor</label>
-		  <input id="b3" type="radio" name="bank" /> <br><br><br>
+		  <input id="b3" type="radio" name="rate" /> <br><br><br>
 		  
 		  
 		  <label> Other details </label><br>
 		  <textarea rows="10" col="5"></textarea>
 		 
-		 <<br><Br><input type="submit"/>
+		 <br><Br><input type="submit"/>
 	 </form>
 	</div>
-	<img id="mouse" src="" alt="themouse">
 
 	
 
 	
 	<script>
 			var stheName, sthePassword;
+			//declaring variables
 			
 			function checkinglength(){
+			//used to check if the value entered by the user is of valid length
 				stheName = document.getElementById("theName").value;
 				sthePassword = document.getElementById("thePassword").value;
 				
@@ -75,6 +84,7 @@
 			}
 			
 			function yipee(){
+			//this function will hide the whole form and display text with and image upon submitting
 				document.getElementById("ourForm").style.display = "none";
 				
 				document.write("thanks for taking the time to fill our form "+ stheName);
@@ -88,16 +98,7 @@
 			}
 						
 			
-	
 	</script> 
 	
-
-
-
-
-
-
-
-
  </body>
 </html>
