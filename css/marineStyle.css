@@ -1,0 +1,79 @@
+.fascinate-inline-regular {
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.story-script-regular {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+	background-color:teal;
+}
+
+.logoImage{
+	width:5%;
+	margin-right:5px;
+}
+
+.title{
+	font-family: "Fascinate Inline", system-ui;
+	text-align:center;
+	font-size:28px;
+}
+.paragraph{
+	font-family: "Story Script", sans-serif;
+}
+.centeralArea{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+}
+
+examples-p1{
+	text-align:left;
+	font-size:14px;
+}
+
+examples-p2{
+	text-align:right;
+	font-size:14px;
+}
+
+examples-p3{
+	text-align:left;
+	font-size:14px;
+}
+
+examples-p4{
+	text-align:right;
+	font-size:14px;
+}
+
+.examples-image1{
+	display:block;
+	margin-left:auto;
+	width:50%;
+}
+
+.examples-image2{
+	display:block;
+	margin-right:auto;
+	width:50%;
+}
+
+.examples-image3{
+	display:block;
+	margin-left:auto;
+	width:50%;
+}
+
+.examples-image4{
+	display:block;
+	margin-right:auto;
+	width:50%;
+}

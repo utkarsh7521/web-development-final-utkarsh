@@ -1,0 +1,162 @@
+/*CSS sheet by:Utkarsh Mishra (25156756)*/
+body{
+  background-image: url("cssimages/threatback.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+   
+}
+
+
+.header{
+	font-family: 'Fascinate Inline', cursive;
+	color: white;
+	background-color:teal;
+	font-size: 30px;
+	padding: 20px;
+	margin-top: 20px;
+	border-radius: 60px;
+	text-align: center;
+	width: 100%;
+	
+}
+
+.footer{
+	color: white;
+	background-color:teal;
+	font-size: 10px;
+	padding: 5px;
+	margin-top: 10px;
+	border-radius: 60px;
+	text-align: center;
+	width: 100%;
+}
+
+
+.navbar-custom {
+  background-color: rgba(46, 139, 87, 0.2);
+}
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.centered {
+  padding: 20px;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 8px;
+  color: white;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color:rgba(46, 139, 87, 0.3);
+  font-weight: 400;
+  font-style: normal;
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#card1{
+  background-color:DeepSkyBlue;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  
+}
+#card1:hover{
+	opacity: 1;
+}
+#cardy1{
+	height: 150px;
+}
+
+
+
+#card2{
+  background-color:DeepSkyBlue;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+#card2:hover{
+	opacity: 1;
+}
+#cardy2{
+	height: 150px;
+}
+
+
+#card3{
+  background-color:DeepSkyBlue;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+#card3:hover{
+	opacity: 1;
+}
+#cardy3{
+	height: 150px;
+}
+
+
+#card4{
+  background-color:DeepSkyBlue;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+#card4:hover{
+	opacity: 1;
+}
+#cardy4{
+	height: 150px;
+}
+
+
+
+#card5{
+  background-color:DeepSkyBlue;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+#card5:hover{
+	opacity: 1;
+}
+#cardy5{
+	height: 150px;
+}
+
+
+
+#card6{
+  background-color:DeepSkyBlue;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+#card6:hover{
+	opacity: 1;
+}
+#cardy{
+	height: 50px;
+}

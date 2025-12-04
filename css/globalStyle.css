@@ -1,0 +1,47 @@
+/*Fonts from Google Fonts*/
+.fascinate-inline-regular {
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.story-script-regular {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*Background Image*/
+.backGroundImage{
+	background-image:url("finalRedoneFolderStructure\globalInitiatives\images\oceanBackground.jpg");
+}
+/*Navbar Assests and Colouring*/
+.logoImage{
+	width:5%;
+	margin-right:5px;
+}
+
+.navbar{
+	background-color:#0F0B56;
+}
+
+.container-fluid{
+	background-color:#5852CE;
+}
+
+.navbar navbar-expand-lg bg-body-tertiary{
+	background-color:#5852CE;
+}
+.collapse navbar-collapse{
+	background-color:#5852CE;
+}
+
+/*Text sizing and styling*/
+.title{
+	font-family: "Fascinate Inline", system-ui;
+	text-align:center;
+	font-size:28px;
+}
+.paragraph{
+	font-family: "Story Script", sans-serif;
+	font-size:18px;
+}
