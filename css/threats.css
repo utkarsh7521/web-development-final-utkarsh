@@ -19,19 +19,30 @@ body{
 	background-color:#5852CE;
 }
 
-.navbar navbar-expand-lg bg-body-tertiary{
+.navbar-expand-lg.bg-body-tertiary{
 	background-color:#5852CE;
 }
-.collapse navbar-collapse{
+.collapse.navbar-collapse{
 	background-color:#5852CE;
 }
 
 #heading, .footer{
-	text-align:center;
-	font-family: 'Fascinate Inline', cursive;
+  text-align:center;
+  font-family: 'Fascinate Inline', cursive;
+  background-color: #0F0B56;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+
+
 }
 
 #threat1, #threat2 , #threat3{
 	height: 400px;
-	width: auto;
+	width: 100%;
+	object-fit:cover;
+	border-radius: 8px;
 }
+
+
