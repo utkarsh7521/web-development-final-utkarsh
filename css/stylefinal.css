@@ -13,31 +13,41 @@ body{
 .header{
 	font-family: 'Fascinate Inline', cursive;
 	color: white;
-	background-color:teal;
+	background:linear-gradient(90deg, #004e92, #000428);
 	font-size: 30px;
 	padding: 20px;
 	margin-top: 20px;
-	border-radius: 60px;
+	border-radius: 20px;
 	text-align: center;
 	width: 100%;
+	  box-shadow: 0 4px 8px rgba(0,0,0,0.5)
 	
 }
 
 .footer{
 	color: white;
-	background-color:teal;
-	font-size: 10px;
+	background:linear-gradient(90deg, #004e92, #000428);
+	font-size: 12px;
 	padding: 5px;
 	margin-top: 10px;
-	border-radius: 60px;
 	text-align: center;
-	width: 100%;
 }
 
 
 .navbar-custom {
-  background-color: rgba(46, 139, 87, 0.2);
+  background:linear-gradient(90deg, #004e92, #000428);
 }
+
+.nav-link {
+  color: white;
+  
+}
+
+.nav-link:hover {
+  color: #FFD700 !important; 
+  text-decoration: underline;
+}
+
 
 
 
@@ -56,107 +66,27 @@ body{
   color: white;
   max-width: 900px;
   margin: 40px auto;
-  background-color:rgba(46, 139, 87, 0.3);
-  font-weight: 400;
+  background-color:rgba(0, 128, 128, 0.4);
+  font-weight: 300;
   font-style: normal;
   
   
 }
 
 
-
-
-
-
-
-
-
-
-
-
-#card1{
-  background-color:DeepSkyBlue;
-  background-size: cover;
-  background-position: center;
+.card {
+  background-color: DeepSkyBlue;
   opacity: 0.7;
-  
-}
-#card1:hover{
-	opacity: 1;
-}
-#cardy1{
-	height: 150px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-
-
-#card2{
-  background-color:DeepSkyBlue;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.7;
-}
-#card2:hover{
-	opacity: 1;
-}
-#cardy2{
-	height: 150px;
+.card:hover {
+  opacity: 1;
+  transform: translateY(-5px); 
+  /*used to create a lift effect */
 }
 
-
-#card3{
-  background-color:DeepSkyBlue;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.7;
-}
-#card3:hover{
-	opacity: 1;
-}
-#cardy3{
-	height: 150px;
-}
-
-
-#card4{
-  background-color:DeepSkyBlue;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.7;
-}
-#card4:hover{
-	opacity: 1;
-}
-#cardy4{
-	height: 150px;
-}
-
-
-
-#card5{
-  background-color:DeepSkyBlue;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.7;
-}
-#card5:hover{
-	opacity: 1;
-}
-#cardy5{
-	height: 150px;
-}
-
-
-
-#card6{
-  background-color:DeepSkyBlue;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.7;
-}
-#card6:hover{
-	opacity: 1;
-}
-#cardy{
-	height: 50px;
+.card-img-top {
+  height: 150px;
+  object-fit: cover; 
 }
