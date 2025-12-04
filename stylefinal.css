@@ -1,21 +1,17 @@
 /*CSS sheet by:Utkarsh Mishra (25156756)*/
 body{
-  background-image: url("cssimages/waterback.jpg");
+  background-image: url("cssimages/threatback.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
- 
-
-}
-.hero{
+   
 }
 
 
-
-.header, .footer{
+.header{
+	font-family: 'Fascinate Inline', cursive;
 	color: white;
 	background-color:teal;
 	font-size: 30px;
@@ -24,6 +20,23 @@ body{
 	border-radius: 60px;
 	text-align: center;
 	width: 100%;
+	
+}
+
+.footer{
+	color: white;
+	background-color:teal;
+	font-size: 10px;
+	padding: 5px;
+	margin-top: 10px;
+	border-radius: 60px;
+	text-align: center;
+	width: 100%;
+}
+
+
+.navbar-custom {
+  background-color: rgba(46, 139, 87, 0.2);
 }
 
 
@@ -33,10 +46,6 @@ body{
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  
-
-  
-  
 }
 
 .centered {
@@ -47,7 +56,9 @@ body{
   color: white;
   max-width: 900px;
   margin: 40px auto;
-  background-color: teal;
+  background-color:rgba(46, 139, 87, 0.3);
+  font-weight: 400;
+  font-style: normal;
   
   
 }

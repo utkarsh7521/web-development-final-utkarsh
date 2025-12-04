@@ -1,0 +1,37 @@
+body{
+  background-image: url("cssimages/threatback.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.logoImage{
+	width:5%;
+	margin-right:5px;
+}
+
+.navbar{
+	background-color:#0F0B56;
+}
+
+.container-fluid{
+	background-color:#5852CE;
+}
+
+.navbar navbar-expand-lg bg-body-tertiary{
+	background-color:#5852CE;
+}
+.collapse navbar-collapse{
+	background-color:#5852CE;
+}
+
+#heading, .footer{
+	text-align:center;
+	font-family: 'Fascinate Inline', cursive;
+}
+
+#threat1, #threat2 , #threat3{
+	height: 400px;
+	width: auto;
+}
