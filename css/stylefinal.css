@@ -1,4 +1,6 @@
 /*CSS sheet by:Utkarsh Mishra (25156756)*/
+
+/*this is the styling for the background image to appear and for it to fit properly */
 body{
   background-image: url("cssimages/threatback.jpg");
   background-repeat: no-repeat;
@@ -9,7 +11,7 @@ body{
    
 }
 
-
+/*this is the styling for the heading , here i have applied a font , changed the font color , font size ,aligned the text,changed background of heading,the padding,spacing, making the box round and also added a shadow. The type of background i have used is gradient and i had searched for it.*/
 .header{
 	font-family: 'Fascinate Inline', cursive;
 	color: white;
@@ -20,10 +22,11 @@ body{
 	border-radius: 20px;
 	text-align: center;
 	width: 100%;
-	  box-shadow: 0 4px 8px rgba(0,0,0,0.5)
+	box-shadow: 0 4px 8px rgba(0,0,0,0.5)
 	
 }
 
+/*this is similar to the heading where i have changed the color, size, padding, alignment*/
 .footer{
 	color: white;
 	background:linear-gradient(90deg, #004e92, #000428);
@@ -33,7 +36,7 @@ body{
 	text-align: center;
 }
 
-
+/*below is the css for the navbar components, i have set the color of this to gradient as well and i have added a glow or we can say highlight effect to the text when its hovered*/
 .navbar-custom {
   background:linear-gradient(90deg, #004e92, #000428);
 }
@@ -57,7 +60,7 @@ body{
   padding: 20px;
   text-align: center;
 }
-
+/*below is how ive styled the main content of the page*/
 .centered {
   padding: 20px;
   font-size: 20px;
@@ -73,7 +76,7 @@ body{
   
 }
 
-
+/*this is the most interesting part, here i have styled the cards , to make them appear in a less opacity state normally but then when mouse is hovered their opacity becomes normal and also ive added a lift effect , where the cards will also slightly lift up when hovered. */
 .card {
   background-color: DeepSkyBlue;
   opacity: 0.7;
@@ -86,6 +89,7 @@ body{
   /*used to create a lift effect */
 }
 
+/*Other than that i have also styled the card images here*/
 .card-img-top {
   height: 150px;
   object-fit: cover; 

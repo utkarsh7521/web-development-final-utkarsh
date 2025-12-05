@@ -1,7 +1,10 @@
+/*CSS sheet by:Utkarsh Mishra (25156756)*/
+
+/*this is the styling to change the background color */
 body{
 	background-color:LightCyan;
 }
-
+/*here i have properly styled the form which will size it properly, make it have a double border, increase padding,have a box shadow and also make its corners round*/
 #ourForm{
 	 background-color:LightBlue;
 	  width: 15%;

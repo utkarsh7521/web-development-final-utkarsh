@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+   <html lang="en">
+ <head>
     <meta charset="UTF-8">
+	<meta name="author" content="Abdul Mohaimen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Human Impact - Life Under Water</title>
 
@@ -10,18 +11,80 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="stylesheet" href="css/impact.css">
-</head>
-<body>
+    <style>
+        /* কার্ড হোভার ইফেক্টের জন্য CSS */
+        .impact-block {
+            position: relative; /* ওভারলে পজিশনিং এর জন্য এটি জরুরি */
+            overflow: hidden; /* ওভারলে যাতে কার্ডের বাইরে না যায় */
+            border-radius: 0.25rem; /* কার্ডের সাথে মিল রেখে বর্ডার-রেডিয়াস */
+        }
 
-    <header class="header-nav sticky-top">
-        
-    </header>
+        .impact-hover-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* Full width */
+            background: linear-gradient(to right, #64ffda, #1997a5); /* Teal gradient */
+            color: #0a192f; /* Dark navy text for contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.2rem;
+            transform: translateY(-100%); /* Start off-screen */
+            transition: transform 0.3s ease-in-out; /* Smooth animation */
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .impact-block:hover .impact-hover-overlay {
+            transform: translateY(0); /* Slide into view on hover */
+        }
+    </style>
+ </head>
+<body>
+<header class="header-nav sticky-top">
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="index.html">
+				<img class="logoImage" src="images/Fulllogo.png" alt="Life Under Water Logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+			  <ul class="navbar-nav mb-2 mb-lg-0">
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="threats.html">Threats to Marine Life</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="conservation.html">Conservation Efforts</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="globalInitiaviesAndPolicies.html">Global Initiatives and Policies</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="marineBiodiversity.html">Marine Biodiversity</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="impact.html">Human Impacts</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="involved.html">Ways to Get Involved</a>
+				</li>
+			</div>
+		  </div>
+		</nav>
+</header>
 
     <main>
         <section class="page-title-section text-white">
             <div class="container">
-                <h1>Major Human Impacts</h1>
-                <p class="lead text-slate-dark">Understanding our footprint on the world's most vital ecosystem.</p>
+                <h1 style="color: white;" class="display-3 fw-bold">Major Human <span class="text-highlight">Impacts</span></h1>
+                <p class="lead mx-auto">Understanding our footprint on the world's most vital ecosystem.</p>
             </div>
         </section>
 
@@ -31,7 +94,7 @@
                 <div class="row g-0 align-items-center impact-block">
                     <div class="col-md-6">
                         <div class="impact-content">
-                            <h3> Plastic Pollution</h3>
+                            <h3>Plastic Pollution</h3>
                             <p>Millions of tonnes plastic enter to the ocean yearly.As estimated  8 to 12 million metric tons of plastics every year. Plastic debris causes injuries and kill Seabirds and othe marine mammals.</p>
                             <a href="https://theoceancleanup.com/ocean-plastic-pollution-explained/" target="_blank" rel="noopener noreferrer">Ocean Plastic Pollution Explained &rarr;</a>
                         </div>
@@ -39,12 +102,15 @@
                     <div class="col-md-6">
                         <div class="impact-image" style="background-image: url('images/plastic.jpg');"></div>
                     </div>
+                    <div class="impact-hover-overlay">
+                        <span>Click the link to learn more about Plastic Pollution</span>
+                    </div>
                 </div>
 
                 <div class="row g-0 align-items-center impact-block">
                     <div class="col-md-6 order-md-2">
                         <div class="impact-content">
-                             <h3> Oil Spills</h3>
+                             <h3>Oil Spills</h3>
                              <p>
                                 Toxic chemicals harm fish and sea birds. Oil is one of them. Most of the oil fall from the large ships and other water vehicles.
                                 <span class="collapse" id="oilSpillMore">
@@ -58,12 +124,15 @@
                     <div class="col-md-6 order-md-1">
                         <div class="impact-image" style="background-image: url('images/oil.jpg');"></div>
                     </div>
+                    <div class="impact-hover-overlay">
+                        <span>Click the link to learn more about Oil Spills</span>
+                    </div>
                 </div>
 
                 <div class="row g-0 align-items-center impact-block">
                     <div class="col-md-6">
                         <div class="impact-content">
-                            <h3> Climate Change</h3>
+                            <h3>Climate Change</h3>
                             <p>
                                 In todays world climate change is one of the curse for human being. Some of the major effects of climate change on Marine life is rising Ocean Temperatures, Ocean Acidification, Strong stroms, Low Oxygen etc.
                                 <span class="collapse" id="climateChangeMore">
@@ -77,19 +146,25 @@
                     <div class="col-md-6">
                         <div class="impact-image" style="background-image: url('images/climate.jpg');"></div>
                     </div>
+                    <div class="impact-hover-overlay">
+                        <span>Click the link to learn more about Climate Change</span>
+                    </div>
                 </div>
 
 
                 <div class="row g-0 align-items-center impact-block">
                     <div class="col-md-6 order-md-2">
                         <div class="impact-content">
-                             <h3> Transportation</h3>
+                             <h3>Transportation</h3>
                              <p>Ships and boats have a direct and harmful impact on maritime animals. Especially large ships cause sounds, vibrations, and the release of fuel and oil into the water. Which creates an unhealthy environment in the water.</p>
                              <a href="https://www.1ocean.org/news/the-impact-of-maritime-transportation-on-the-ocean-analysis-and-solutions" target="_blank" rel="noopener noreferrer">Shipping's Environmental Impact on the Ocean &rarr;</a>
                         </div>
                     </div>
                     <div class="col-md-6 order-md-1">
                         <div class="impact-image" style="background-image: url('images/ship.jpg');"></div>
+                    </div>
+                    <div class="impact-hover-overlay">
+                        <span>Click the link to learn more about Transportation impacts</span>
                     </div>
                 </div>
 
@@ -125,4 +200,4 @@
     </script>
 
 </body>
-</html>
+  </html>

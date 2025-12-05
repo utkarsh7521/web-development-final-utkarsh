@@ -1,4 +1,6 @@
 /*CSS sheet by:Utkarsh Mishra (25156756)*/
+
+/*this is the styling for the background image to appear and for it to fit properly */
 body{
   background-image: url("cssimages/threatback.jpg");
   background-repeat: no-repeat;
@@ -6,7 +8,7 @@ body{
   background-attachment: fixed;
 }
 
-
+/*below is the styling for the navbar components and the logo in it*/
 .logoImage{
 	width:5%;
 	margin-right:5px;
@@ -32,7 +34,7 @@ body{
   transition: 0.3s;
 }
 
-
+/*basic heading and footing styling*/
 #heading, .footer{
   text-align:center;
   font-family: 'Fascinate Inline', cursive;
@@ -44,7 +46,7 @@ body{
 
 
 }
-
+/*this is to just adjust the images*/
 #threat1, #threat2 , #threat3{
 	height: 400px;
 	width: 100%;

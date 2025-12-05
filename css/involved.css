@@ -42,7 +42,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 
     /* Background Image (Global Ocean Image) */
-    background-image: url("cssimages/threatback.jpg");
+    background-image: url("cssimages/threatback.jpg"); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Fixed background effect */
@@ -59,7 +59,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(10, 25, 47, 0.85); /* <-- এই মানটি 0.85 রাখা হয়েছে */
+    background-color: rgba(10, 25, 47, 0.1); /* Overlay opacity further reduced for maximum clarity of background photo */
     z-index: -1;
 }
 
@@ -156,6 +156,11 @@ a:hover, a:focus {
     color: var(--color-white);
 }
 
+/* Specific background image for engage card */
+.card-bg-engage {
+    background-image: url('../images/engage.jpg');
+}
+
 .card-custom .icon {
     font-size: 2.5rem;
     color: var(--color-teal-bright);
@@ -167,21 +172,34 @@ a:hover, a:focus {
 
 /* --- Header / Navbar --- */
 .navbar-nav {
-    display: flex;
-    align-items: center;
+    gap: 0.5rem; /* Add some space between nav items */
 } 
 
 .nav-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    padding: 1rem;
+    transition: all var(--transition-speed) ease;
 }
 .header-nav {
     background-color: rgba(10, 25, 47, 0.85);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 10px 30px -10px var(--shadow-main);
+}
+
+.logoImage {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    transition: all var(--transition-speed) ease;
+    object-fit: cover;
+}
+
+.logoImage:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px var(--color-teal-bright));
 }
 
 .navbar-brand .logo-text {
@@ -194,6 +212,7 @@ a:hover, a:focus {
 }
 .nav-link {
     color: var(--color-slate-dark);
+    font-size: 0.9rem;
 }
 .nav-link.active, .nav-link:hover {
     color: var(--color-teal-bright);
@@ -207,29 +226,49 @@ a:hover, a:focus {
 .page-title-section h1 {
     margin-bottom: 0.5rem;
 }
+.page-title-section h1 {
+    color: var(--color-white); /* Make title text brighter */
+}
+
+.page-title-section .lead {
+    color: var(--color-slate-light); /* Use the lighter slate color for better readability */
+}
 
 /* --- Take Action Page Specific Styles --- */
 
 /* --- Hero Section Overrides (FIX: Now transparent to show Body BG) --- */
 .hero-section {
-    /* FIX: Image properties removed, relying on body background image */
-    background-image: none;
-    background-color: transparent;
+    background-image: url('../images/takeaction.jpg'); /* Hero background image */
     background-size: cover;
     background-position: center;
     position: relative;
     padding: 8rem 0;
     min-height: 400px; 
+    z-index: 2; /* Bring hero section above the body's ::before pseudo-element */
 }
 
 .hero-section::before {
-    /* FIX: Setting content to none to remove its local overlay, relying on body::before */
-    content: none;
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Darkened the overlay for better contrast */
+    z-index: -1;
 }
 
 .hero-section .container {
     position: relative;
     z-index: 2;
+}
+
+/* Hero section text color and highlight */
+.hero-section h1,
+.hero-section p {
+    color: var(--color-white); /* Make heading and paragraph text white for contrast */
+}
+
+.text-highlight {
+    color: var(--color-teal-bright); /* Use the primary accent color for highlighted text */
+    font-weight: 700;
 }
 
 
@@ -264,7 +303,7 @@ a:hover, a:focus {
 /* --- Impact/Donate Banner Styles (using image_action_amplify_banner.jpg) --- */
 .impact-banner {
     position: relative;
-    background-image: url('cssimages/impact.jpg');
+    background-image: url('../images/impact.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 8px;
@@ -287,6 +326,11 @@ a:hover, a:focus {
     color: var(--color-slate-light);
 }
 
+/* Highlight class for specific text */
+.highlight-text {
+    color: var(--color-teal-bright); /* Bright accent color */
+    font-weight: 700; /* Bolder text */
+}
 
 /* --- Footer (Merged Global) --- */
 .footer-main {

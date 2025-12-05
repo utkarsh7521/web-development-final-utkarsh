@@ -1,4 +1,6 @@
 /*CSS sheet by:Utkarsh Mishra (25156756)*/
+
+/*this is the styling for the background image to appear and for it to fit properly */
 body{
   background-image: url("cssimages/threatback.jpg");
   background-repeat: no-repeat;
@@ -6,6 +8,7 @@ body{
   background-attachment: fixed;
 }
 
+/*below is the styling for the navbar components and the logo in it*/
 
 .logoImage{
 	width:5%;
@@ -33,7 +36,7 @@ body{
   transition: 0.3s;
 }
 
-
+/*here i decided to go with a simple yet effective styling of the header and footer, font has been applied too. */
 #heading, .footer{
 	text-align:center;
 	font-family: 'Fascinate Inline', cursive;
