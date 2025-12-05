@@ -43,6 +43,7 @@
 				</li>
 				<li class="nav-item">
 				  <a class="nav-link" target="_blank" href="marineBiodiversity.html">Marine Biodiversity</a>
+				  </li>
 				 <li class="nav-item">
 				  <a class="nav-link" target="_blank" href="impact.html">Human Impacts</a>
 				</li>
@@ -70,9 +71,9 @@
       <img src="images/reduction.jpg" class="img-fluid rounded shadow" alt="Conservation effort">
     </div>
    <!-- Text column -->
-    <div class="col-md-6">
-      <h2>pollution reduction</h2>
-      <p>
+    <div class="col-md-6" onMouseOver="showMyText1();" onmouseout="hideMyText1();">
+      <h2 >pollution reduction</h2>
+      <p id="myText1">
         Plastic, oil spills, and chemical waste are major problems for marine life. Pollution harms animals, damages coral reefs, and spreads through the food chain. Cleaning up beaches, reducing plastic use, and setting up waste control systems are key steps. Coral reef restoration and marine protected areas also help damaged ecosystems recover..
       </p>
     </div>
@@ -83,9 +84,9 @@
    
    <div class="row align-items-center">
     <!-- Image column -->
-    <div class="col-md-6">
-     <h2>sustainable fishing</h2>
-      <p>
+    <div class="col-md-6" onMouseOver="showMyText2();" onmouseout="hideMyText2();">
+     <h2 >sustainable fishing</h2>
+      <p id="myText2">
         Marine conservation protects biodiversity, restores habitats, and ensures sustainable ocean health.
         Initiatives include coral reef restoration, plastic cleanup, and marine protected areas.
       </p>
@@ -107,9 +108,9 @@
     </div>
 
     <!-- Text column -->
-    <div class="col-md-6">
-      <h2>species protection programs</h2>
-      <p>
+    <div class="col-md-6" onMouseOver="showMyText3();" onmouseout="hideMyText3();">
+      <h2 >species protection programs</h2>
+      <p id="myText3">
         Marine conservation protects biodiversity, restores habitats, and ensures sustainable ocean health.
         Initiatives include coral reef restoration, plastic cleanup, and marine protected areas.
       </p>
@@ -139,19 +140,51 @@
 	
 	
 	
-	<introduction>
 	<p>Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-	</introduction>
 	
 
 	
-	
-	
-		
-	
-	
+<footer class="text-center bg-dark text-light py-3">
+  <p>Working together for a healthier ocean 🌊</p>
+</footer>
 
-<div class="footer">
-this is the footer</div>
+
+<script>
+window.onload = function() {
+  document.getElementById("myText1").style.display = "none";
+  document.getElementById("myText2").style.display = "none";
+  document.getElementById("myText3").style.display = "none";
+};
+
+function showMyText1() {
+  document.getElementById("myText1").style.display = "block";
+}
+function hideMyText1() {
+  document.getElementById("myText1").style.display = "none";
+}
+
+function showMyText2() {
+  document.getElementById("myText2").style.display = "block";
+}
+function hideMyText2() {
+  document.getElementById("myText2").style.display = "none";
+}
+
+function showMyText3() {
+  document.getElementById("myText3").style.display = "block";
+}
+function hideMyText3() {
+  document.getElementById("myText3").style.display = "none";
+}
+</script>
+
+
+
+
+
+
+
+
+
 </body>
 </html>
