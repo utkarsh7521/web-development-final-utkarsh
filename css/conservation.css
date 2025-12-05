@@ -19,14 +19,23 @@ body{
 	background-color:#5852CE;
 }
 
-.navbar navbar-expand-lg bg-body-tertiary{
+.navbar.navbar-expand-lg.bg-body-tertiary{
 	background-color:#5852CE;
 }
-.collapse navbar-collapse{
+.collapse.navbar-collapse{
 	background-color:#5852CE;
 }
+
+.navbar .nav-link:hover {
+  background-color: #3f3bb3;
+  color: white;
+  transition: 0.3s;
+}
+
 
 #heading, .footer{
 	text-align:center;
 	font-family: 'Fascinate Inline', cursive;
 }
+
+
