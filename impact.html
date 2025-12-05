@@ -1,55 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!--by Abdul-->
     <meta charset="UTF-8">
-    <title>Life Under Water</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Impact - Life Under Water</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- Your CSS file -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="impact.css">
 </head>
-
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Life Under Water</a>
+    <header class="header-nav sticky-top">
+        
+    </header>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#importance">Importance</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#threats">Threats</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#protect">Protect</a></li>
-                </ul>
+    <main>
+        <section class="page-title-section text-white">
+            <div class="container">
+                <h1>Major Human Impacts</h1>
+                <p class="lead text-slate-dark">Understanding our footprint on the world's most vital ecosystem.</p>
             </div>
-        </div>
-    </nav>
-
-
-    <!-- Main Content -->
-    <div class="container mt-4">
-
-        <section id="about" class="box">
-            <h2>What Is Life Under Water?</h2>
-            <p>
-                Life under water includes all plants and animals living in oceans, seas,
-                rivers, and lakes. This underwater world supports millions of species.
-            </p>
         </section>
 
-        <section id="importance" class="box">
-            <h2>Why Is It Important?</h2>
-            <ul>
-                <li>Oceans produce more than half of the Earth's oxygen.</li>
-                <li>Marine life provides food for billions of people.</li>
-                <li>Oceans regulate global climate and temperature.</li>
-                <li>Supports millions of jobs worldwide.</li>
+        <section class="py-5">
+            <div class="container">
+
+                <div class="row g-0 align-items-center impact-block">
+                    <div class="col-md-6">
+                        <div class="impact-content">
+                            <h3> Plastic Pollution</h3>
+                            <p>Millions of tonnes plastic enter to the ocean yearly.As estimated  8 to 12 million metric tons of plastics every year. Plastic debris causes injuries and kill Seabirds and othe marine mammals.</p>
+                            <a href="https://theoceancleanup.com/ocean-plastic-pollution-explained/" target="_blank" rel="noopener noreferrer">Ocean Plastic Pollution Explained &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="impact-image" style="background-image: url('img/plastic.jpg');"></div>
+                    </div>
+                </div>
+
+                <div class="row g-0 align-items-center impact-block">
+                    <div class="col-md-6 order-md-2">
+                        <div class="impact-content">
+                             <h3> Oil Spills</h3>
+                             <p>
+                                Toxic chemicals harm fish and sea birds. Oil is one of them. Most of the oil fall from the large ships and other water vehicles.
+                                <span class="collapse" id="oilSpillMore">
+                                    When this harmful substance just knock over to the water bodies then fish absorb it through it’s gills. Which causes harm to them. Another thing is oil also blocks the Sunlight from going water. As a result, this affects sea plants coral reefs, planktons and so on. Which results in collapse of Ecosystem. After that food chain contamination occur even after the water looks clear because oil remains in sand, rocks, sea floor and sediment. Bigger issue is when the fish and small insects under water eat toxic particles predators eat them and toxins goes all the food chain under water.
+                                </span>
+                                <a class="read-more" data-bs-toggle="collapse" href="#oilSpillMore" role="button" aria-expanded="false" aria-controls="oilSpillMore">Read More</a>
+                            </p>
+                            <a href="https://www.noaa.gov/education/resource-collections/ocean-coasts/oil-spills" target="_blank" rel="noopener noreferrer">Oil Spills: Education and Resources &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <div class="impact-image" style="background-image: url('img/oil.jpg');"></div>
+                    </div>
+                </div>
+
+                <div class="row g-0 align-items-center impact-block">
+                    <div class="col-md-6">
+                        <div class="impact-content">
+                            <h3> Climate Change</h3>
+                            <p>
+                                In todays world climate change is one of the curse for human being. Some of the major effects of climate change on Marine life is rising Ocean Temperatures, Ocean Acidification, Strong stroms, Low Oxygen etc.
+                                <span class="collapse" id="climateChangeMore">
+                                    Due to this dissolve shells of crabs, oysters and plankton. Fish change their season and place for giving birth their babies. Which cause change of the colour, skeleton and behaviour for the survival. Suffocation can also cause for the marine living creatures.
+                                </span>
+                                <a class="read-more" data-bs-toggle="collapse" href="#climateChangeMore" role="button" aria-expanded="false" aria-controls="climateChangeMore">Read More</a>
+                            </p>
+                             <a href="https://education.nationalgeographic.org/resource/ocean-impacts-climate-change/" target="_blank" rel="noopener noreferrer">Ocean Impacts of Climate Change &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="impact-image" style="background-image: url('img/climate.jpg');"></div>
+                    </div>
+                </div>
+
+
+                <div class="row g-0 align-items-center impact-block">
+                    <div class="col-md-6 order-md-2">
+                        <div class="impact-content">
+                             <h3> Transportation</h3>
+                             <p>Ships and boats have a direct and harmful impact on maritime animals. Especially large ships cause sounds, vibrations, and the release of fuel and oil into the water. Which creates an unhealthy environment in the water.</p>
+                             <a href="https://www.1ocean.org/news/the-impact-of-maritime-transportation-on-the-ocean-analysis-and-solutions" target="_blank" rel="noopener noreferrer">Shipping's Environmental Impact on the Ocean &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <div class="impact-image" style="background-image: url('img/ship.jpg');"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-main">
+        <div class="container text-center py-3">
+            <p class="text-white mb-0">&copy; 2025 Life Under Water. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var collapseElements = document.querySelectorAll('.collapse');
+            
+            collapseElements.forEach(function (collapseEl) {
+                var trigger = document.querySelector('[href="#' + collapseEl.id + '"]');
+
+                collapseEl.addEventListener('show.bs.collapse', function () {
+                    trigger.textContent = 'Read Less';
+                });
+
+                collapseEl.addEventListener('hide.bs.collapse', function () {
+                    trigger.textContent = 'Read More';
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
