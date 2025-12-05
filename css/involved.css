@@ -1,0 +1,314 @@
+/*
+Project: "Deep Blue" Redesign
+Author: Gemini
+Date: 2025-12-04
+Purpose: Styles specifically for the Take Action Page, including merged global styles.
+*/
+
+/* 1. Core Variables & Setup (Merged Global)
+-------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Main Palette */
+    --color-navy-dark: #0a192f;      /* Primary background */
+    --color-navy-light: #112240;     /* Lighter background for cards/panels */
+    --color-slate-light: #ccd6f6;    /* Main text color */
+    --color-slate-dark: #8892b0;     /* Subdued text color for descriptions */
+    --color-teal-bright: #64ffda;    /* Primary accent and CTA */
+    --color-white: #e6f1ff;          /* For bright text highlights */
+
+    /* Supporting Colors */
+    --color-teal-dark: #1997a5;
+    --color-blue-glow: rgba(100, 255, 218, 0.1);
+
+    /* Typography */
+    --font-main: 'Inter', sans-serif;
+
+    /* Transitions & Shadows */
+    --transition-speed: 0.3s;
+    --shadow-main: rgba(2, 12, 27, 0.7);
+}
+
+/* 2. Base & Body Styles 
+-------------------------------------------------- */
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-navy-dark);
+    color: var(--color-slate-dark);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Background Image (Global Ocean Image) */
+    background-image: url('img/waterback.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fixed background effect */
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+
+body::before {
+    /* Full Page Dark Overlay (opacity matched to 0.85) */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(10, 25, 47, 0.85); /* <-- এই মানটি 0.85 রাখা হয়েছে */
+    z-index: -1;
+}
+
+
+/* 3. Global Typography & Links (Merged Global)
+-------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--color-slate-light);
+    margin: 0 0 1rem 0;
+}
+
+h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+h2 { font-size: clamp(2rem, 4vw, 3rem); }
+h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
+h4 { font-size: 1.25rem; }
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--color-teal-bright);
+    text-decoration: none;
+    transition: all var(--transition-speed) ease;
+}
+
+a:hover, a:focus {
+    color: var(--color-white);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+/* 4. Reusable Components (Merged Global)
+-------------------------------------------------- */
+
+/* --- Buttons --- */
+.btn-custom {
+    color: var(--color-teal-bright);
+    background-color: transparent;
+    border: 1px solid var(--color-teal-bright);
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: all var(--transition-speed) ease;
+}
+
+.btn-custom:hover {
+    background-color: var(--color-blue-glow);
+    box-shadow: 0 0 10px var(--color-blue-glow);
+    color: var(--color-teal-bright);
+}
+
+/* --- Cards --- */
+.card-custom {
+    background-color: var(--color-navy-light);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 2rem;
+    height: 100%;
+    transition: all var(--transition-speed) ease;
+    box-shadow: 0 10px 30px -15px var(--shadow-main);
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-teal-bright);
+    box-shadow: 0 20px 30px -15px var(--shadow-main);
+}
+
+/* --- Card Background Image Styles (Generic) --- */
+.card-custom.card-bg-image {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    color: var(--color-white);
+}
+
+.card-custom.card-bg-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 25, 47, 0.7); /* Dark overlay for readability */
+    border-radius: 8px;
+    z-index: -1;
+}
+
+.card-custom.card-bg-image h3,
+.card-custom.card-bg-image p {
+    color: var(--color-white);
+}
+
+.card-custom .icon {
+    font-size: 2.5rem;
+    color: var(--color-teal-bright);
+    margin-bottom: 1.5rem;
+}
+
+/* 5. Page-Specific Sections (Merged Global)
+-------------------------------------------------- */
+
+/* --- Header / Navbar --- */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+} 
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.header-nav {
+    background-color: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px -10px var(--shadow-main);
+}
+
+.navbar-brand .logo-text {
+    color: var(--color-slate-light);
+    font-weight: 600;
+}
+.navbar-brand .logo-icon {
+    color: var(--color-teal-bright);
+    font-size: 2rem;
+}
+.nav-link {
+    color: var(--color-slate-dark);
+}
+.nav-link.active, .nav-link:hover {
+    color: var(--color-teal-bright);
+}
+
+/* --- Page Titles --- */
+.page-title-section {
+    padding: 6rem 0 3rem 0;
+    text-align: center;
+}
+.page-title-section h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* --- Take Action Page Specific Styles --- */
+
+/* --- Hero Section Overrides (FIX: Now transparent to show Body BG) --- */
+.hero-section {
+    /* FIX: Image properties removed, relying on body background image */
+    background-image: none;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 8rem 0;
+    min-height: 400px; 
+}
+
+.hero-section::before {
+    /* FIX: Setting content to none to remove its local overlay, relying on body::before */
+    content: none;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* --- Small Custom Button --- */
+
+.btn-custom-small {
+    color: var(--color-teal-bright);
+    background-color: transparent;
+    border: 1px solid var(--color-teal-bright);
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    transition: all var(--transition-speed) ease;
+}
+
+.btn-custom-small:hover {
+    background-color: var(--color-blue-glow);
+    box-shadow: 0 0 10px var(--color-blue-glow);
+    color: var(--color-teal-bright);
+}
+
+/* --- Subscribe Form Placeholder Visibility --- */
+.card-custom .form-control::placeholder {
+    color: var(--color-white);
+    opacity: 1;
+}
+
+/* --- Impact/Donate Banner Styles (using image_action_amplify_banner.jpg) --- */
+.impact-banner {
+    position: relative;
+    background-image: url('img/impact.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.impact-banner-overlay {
+    background: rgba(10, 25, 47, 0.7); /* Dark overlay */
+    padding: 4rem 2rem;
+}
+
+.impact-banner h2 {
+    color: var(--color-white);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.impact-banner p {
+    color: var(--color-slate-light);
+}
+
+
+/* --- Footer (Merged Global) --- */
+.footer-main {
+    background: linear-gradient(to right, #0a192f, #112240);
+    text-align: center;
+    color: var(--color-slate-light);
+    font-size: 0.9rem;
+    box-shadow: 0 -10px 30px -15px var(--shadow-main);
+    margin-top: 5rem;
+}
+
+/* Utility class for vertical spacing between rows */
+.row-spacing {
+    margin-top: 1.5rem;
+}
+
+/* 6. Responsive Adjustments (Merged Global)
+-------------------------------------------------- */
+@media (max-width: 480px) {
+    .page-title-section h1 {
+        font-size: 2.2rem;
+    }
+}
+ 
+ 

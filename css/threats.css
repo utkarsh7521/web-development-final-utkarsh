@@ -25,6 +25,12 @@ body{
 .collapse.navbar-collapse{
 	background-color:#5852CE;
 }
+.navbar .nav-link:hover {
+  background-color: #3f3bb3;
+  color: white;
+  transition: 0.3s;
+}
+
 
 #heading, .footer{
   text-align:center;
