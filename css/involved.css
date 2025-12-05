@@ -42,7 +42,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 
     /* Background Image (Global Ocean Image) */
-    background-image: url('img/waterback.jpg'); 
+    background-image: url("cssimages/threatback.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Fixed background effect */
@@ -264,7 +264,7 @@ a:hover, a:focus {
 /* --- Impact/Donate Banner Styles (using image_action_amplify_banner.jpg) --- */
 .impact-banner {
     position: relative;
-    background-image: url('img/impact.jpg');
+    background-image: url('cssimages/impact.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 8px;

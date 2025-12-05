@@ -12,11 +12,14 @@
 }
 /*Background Image and colour*/
 .backGroundImage{
-	background-image:url("../images/oceanBackground.jpg");
+	background-image:url("cssimages/oceanBackground.jpg");
 }
 
 body{
 	background-color:#5852CE;
+	background-image: url("cssimages/threatback.jpg");
+	  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*Navbar Assests and Colouring*/
 .logoImage{

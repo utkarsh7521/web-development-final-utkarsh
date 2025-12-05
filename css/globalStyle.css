@@ -11,8 +11,10 @@
   font-style: normal;
 }
 /*Background Image*/
-.bg{	
-	background-image:url("../images/oceanBackground.jpg");
+body{	
+	background-image: url("cssimages/threatback.jpg");
+	  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*Navbar Assests and Colouring*/
 .logoImage{

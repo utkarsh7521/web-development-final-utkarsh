@@ -18,7 +18,7 @@
 	<div class="navbar"> <!--Navbar code from bootstrap-->
 		<nav class="navbar navbar-expand-lg bg-body-tertiary">
 		  <div class="container-fluid">
-			<img class="logoImage" src="images/lifeBelowWater.jpg" alt="logo"> <!--Logo image taken from 17 sustainability goals to mark our websites theme-->
+			<img class="logoImage" src="images/FullLogo.png"  alt="logohere "> <!--Logo image taken from 17 sustainability goals to mark our websites theme-->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>
@@ -69,7 +69,7 @@
 		<div class="accordion" id="accordionExample">
 			<div class="accordion-item">
 				<h2 class="accordion-header">
-					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					<button class="accordion-button title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 						Fish
 					</button>
 				</h2>
@@ -83,12 +83,12 @@
 		<div class="accordion" id="accordionExample">
 			<div class="accordion-item">
 				<h2 class="accordion-header">
-					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					<button class="accordion-button title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 						Underwater Plants
 					</button>
 				</h2>
 				<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-				<div class="accordion-body">
+				<div class="accordion-body paragraph">
 					Both underwater plants like seaweed and algae along with coral make great contributions to the biodiversity of marine life.<br>Plants help give various species of fish both shelter to hide from prey but also nutrients as many kinds of fish like Achilles Tang and the Atlantic Blue Tang eat algae to survive which ensures their survival and allows the amount of it growing to be maintained.<br>They also help keep reefs in shape as they use root-like limbs called holdfasts to grip onto rocks or coral which helps hold reefs together akin to how trees can hold hills together with their roots.<br>Despite being underwater, some forms of algae can engage in photosythesis through both carbon dioxcide and sunlight if they are close to the surface, which contributes to 30-50% of the total oxygen on earth, making the health of the ocean highly important for surface life.
 				</div>
 				</div>
@@ -96,12 +96,12 @@
 		<div class="accordion" id="accordionExample">
 			<div class="accordion-item">
 				<h2 class="accordion-header">
-					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					<button class="accordion-button title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 						Crustations
 					</button>
 				</h2>
 				<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-				<div class="accordion-body">
+				<div class="accordion-body paragraph">
 					Crustations, like crabs, shrimps and lobsters partake in similar contributions to fish like nutrient cycling and regulating predator-prey relationships however they take on more interesting roles in the ocean.<br>
 					Certain variations of crab, like the coral gaurd crab and shrimp, protect and activly defend coral reefs from predators that prey on coral like coral eating snails, starfish and barnacles as to protect their homes and sources of food.<br>
 					Shrimps and Crabs break down and dig in sand and sediment on the ocean bed as to hide in the sand, this helps breakdown large bits of sediment making more sand, oxygenates the sand allowing it to be broken down and releases nitrogen and phoserous helping nutrient cycling.</p>
@@ -109,54 +109,164 @@
 				</div>
 				</div>
 		<br><br><br>
-		<div class="quiz"> <!--Javascript code allowing users to take an quiz on the information they just learnt-->
-					<script>
-					let answerOne = "coral gaurd crab"
+<!--WARNING! THIS PAGE IS USED TO WORK ON THE JAVA FOR MARINE BIODIVERSITY! DO NOT LINK THIS!-->
 
-					let attemptOne = " "
-
-
-					let count = 0;
-					let results = "";
-
-					function ansCheck(){
-						attemptOne = document.getelementbyid("UI1").value
-						
-						if (attemptOne == answerOne){
-							document.getelementbyid("results").innerHTML = "Correct!!!"
-							count += 1
-						}else if (attemptOne != answerOne){
-							document.getelementbyid("results").innerHTML = "Incorrect!!!"
-						}
-					}
-						
-						alert("You've earned "+count+" out of five!")
-						
-						count = 0
-					}
-					</script>
-				
-				<form onsubmit="return false;">
-					<label>Question One</label>
-					<br>
-					<label>What Kind of Crab Defends Coral Reefs?</label>
-					<br><br>
-					<input id="UI1" type="text" required></input>
-				</form>	
-					<button class="paragraph" onclick="ansCheck()" type="button">Take Quiz on what you've learnt!</button>
-				
-				<div>
-					<p id="results"></p>
-				</div>
+<div class="quiz"> <!--Javascript code allowing users to take an quiz on the information they just learnt-->
+	<script>
+		let answerOne = "2"
+		let answerTwo = "3"
+		let answerThree = "3" <!--This is where the correct answers are initialized-->
+		let answerFour = "1"
+		let answerFive = "2"
 		
-		
+		let attemptOne = " "
+		let attemptTwo = " "
+		let attemptThree = " " <!--This is where the users inputs are stored-->
+		let attemptFour = " "
+		let attemptFive = " "
+
+
+		let count = 0; <!--This counts how many questions the user got right-->
+
+		function ansCheck(){
+			attemptOne = document.getElementById("UI1").value
+			attemptTwo = document.getElementById("UI2").value
+			attemptThree = document.getElementById("UI3").value	<!--The five varibles are made to store the users attempts via textboxes id "UI (User Input)"-->
+			attemptFour = document.getElementById("UI4").value
+			attemptFive = document.getElementById("UI5").value
+						
+			if (attemptOne == answerOne){ <!--The user's answer is compared to the actual answer via an if check-->
+				document.getElementById("results1").innerHTML = "Q1 = Correct!!!" <!--If it is correct, Q1 = correct!!! is written into the empty paragraph tag results1-->
+				count += 1 <!--Then the count is increased by one-->
+			}else if (attemptOne != answerOne){ <!--Then, the users answer is checked if it isn't the same-->
+				document.getElementById("results1").innerHTML = "Q1 = Incorrect! It was "+answerOne+"!" <!--If incorrect, Q1 = Incorrect along with the correct answer are written into the same p tag-->
+			}
+			<!--This logic is repeated with the other questions-->
+			if (attemptTwo == answerTwo){
+				document.getElementById("results2").innerHTML = "Q2 = Correct!!!"
+				count += 1
+			}else if (attemptTwo != answerTwo){
+				document.getElementById("results2").innerHTML = "Q2 = Incorrect! It was "+answerTwo+"!"
+			}
+			
+			if (attemptThree == answerThree){
+				document.getElementById("results3").innerHTML = "Q3 = Correct!!!"
+				count += 1
+			}else if (attemptThree != answerThree){
+				document.getElementById("results3").innerHTML = "Q3 = Incorrect! It was "+answerThree+"!"
+			}
+			
+			if (attemptFour == answerFour){
+				document.getElementById("results4").innerHTML = "Q4 = Correct!!!"
+				count += 1
+			}else if (attemptFour != answerFour){
+				document.getElementById("results4").innerHTML = "Q4 = Incorrect! It was "+answerFour+"!"
+			}
+			
+			if (attemptFive == answerFive){
+				document.getElementById("results5").innerHTML = "Q5 = Correct!!!"
+				count += 1
+			}else if (attemptFive != answerFive){
+				document.getElementById("results5").innerHTML = "Q5 = Incorrect! It was "+answerFive+"!"
+			}
+			alert("You've earned "+count+" out of five!") <!--Once complete, the cound is read out via alert-->
+		}
+	</script>
+	<div class="mainQuiz">
+	<h1 class="title">The Marine Quiz!</h1>	
+		<form onsubmit="return false;"> <!--This contains all the questions and inputs needed to complete the quiz-->
+		<label class="paragraph">To answer the questions, Input the number corrosponding to its respective answer. Example = (2 = yes -> type 2)</label> <!--Instructions for users on how to properly answer questions-->
+		<br><br>
+			<label class="paragraph">Question One</label>
+			<br>
+			<label class="paragraph">What Kind of Crab Defends Coral Reefs?</label>
+			<br><br>
+			<label class="paragraph">1 = Coral Lobster</label>
+			<br>
+			<label class="paragraph">2 = Coral gaurd crab</label>
+			<br>
+			<label class="paragraph">3 = Purple tailed scampi</label>
+			<br><br>
+			<input id="UI1" type="text" required></input> <!--The user inputs their answers into these textboxes-->
+			
+			<br><br>
+			
+			<label class="paragraph">Question Two</label>
+			<br>
+			<label class="paragraph">How many species of fish are in the ocean?</label>
+			<br><br>
+			<label class="paragraph">1 = 4.1 million</label>
+			<br>
+			<label class="paragraph">2 = 1.3 million</label>
+			<br>
+			<label class="paragraph">3 = 2.2 million</label>
+			<br><br>
+			<input id="UI2" type="text" required></input> <!--The user inputs their answers into these textboxes-->
+			
+			<br><br>
+			
+			<label class="paragraph">Question Three</label>
+			<br>
+			<label class="paragraph">What is 'Nutrient Cycling?'</label>
+			<br><br>
+			<label class="paragraph">1 = An underwater buffet opens</label>
+			<br>
+			<label class="paragraph">2 = A time when large quantities of food is dispersed across the ocean</label>
+			<br>
+			<label class="paragraph">3 = A process in which nitrogen, phosporus and carbon are recycled and distributed</label>
+			<br><br>
+			<input id="UI3" type="text" required></input> <!--The user inputs their answers into these textboxes-->
+			
+			<br><br>
+			
+			<label class="paragraph">Question Four</label>
+			<br>
+			<label class="paragraph">True or False? Do crabs contribute to nutrient cycling?</label>
+			<br><br>
+			<label class="paragraph">1 = True</label>
+			<br>
+			<label class="paragraph">2 = False</label>
+			<br><br>
+			<input id="UI4" type="text" required></input> <!--The user inputs their answers into these textboxes-->
+			
+			<br><br>
+			
+			<label class="paragraph">Question Five</label>
+			<br>
+			<label class="paragraph">What holds algae down?</label>
+			<br><br>
+			<label class="paragraph">1 = Roots</label>
+			<br>
+			<label class="paragraph">2 = Holdfasts</label>
+			<br>
+			<label class="paragraph">3 = Spikes</label>
+			<br><br>
+			<input id="UI5" type="text" required></input> <!--The user inputs their answers into these textboxes-->
+			
+			<br><br>
+		</form>	
+		<button class="paragraph" onclick="ansCheck()" type="button">Submit Your Answers!</button> <!--Once completed, the user submits their answers which are put through the function stored in the java-->
+					
+		<div>
+			<p id="results1" class="paragraph"></p>
+			<p id="results2" class="paragraph"></p>
+			<p id="results3" class="paragraph"></p> <!--Empty paragraphs used to have the results written into-->
+			<p id="results4" class="paragraph"></p>
+			<p id="results5" class="paragraph"></p>
+		</div>
 		</div>
 		
-		<div class="footer"> <!--Credits to me-->
-			<p class="title">This Page Was Created By Ben Mcevoy</p>
+		<div class="referances">
+		<!--
+		https://coralvita.co/coral-cafe/plants-in-a-coral-reef/
+		https://www.britannica.com/science/algae/Physical-and-ecological-features-of-algae
+		https://www.britannica.com/animal/coral
+		https://thegreenodyssea.net/en/animals/coral-guard-crabs-the-hidden-protectors-of-reef-ecosystems/
+		https://www.sciencedirect.com/science/article/abs/pii/S0022201120302068
+		https://education.nationalgeographic.org/resource/marine-food-chains-and-biodiversity/
+		https://realitypathing.com/benefits-of-crustaceans-in-marine-ecosystems/
+		-->
 		</div>
-	
 	</div>
 </body>
-
 </html>

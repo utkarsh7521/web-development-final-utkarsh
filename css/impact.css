@@ -38,7 +38,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 
     /* background image */
-    background-image: url('img/waterback.jpg'); /* <-- Use this photo*/
+    background-image: url("cssimages/threatback.jpg"); /* <-- Use this photo*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
